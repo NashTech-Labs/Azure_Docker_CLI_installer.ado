@@ -9,7 +9,7 @@ The pipeline requires the following parameters to be defined:
 | Name  | Displayname | type | Default | Values | Opional/Required | Comments |
 | ------------- | ------------- | :-------------: | :-------------: | ------------- | :-------------: | ------------- |
 | dockerVersion | Docker Version | string | 17.09.0-ce | | Required | Specifies the version of the Docker CLI to install |
-
+| releaseType | Release type | string | stable | stable, edge, test, nightly | Optional | Specifies the release type to install. The value nightly is not supported on Windows |
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
