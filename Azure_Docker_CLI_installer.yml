@@ -1,0 +1,17 @@
+# Docker CLI installer v0
+# Install Docker CLI on agent machine.
+
+parameters:
+- name: 'dockerVersion'
+  type: string    
+  default: '17.09.0-ce'
+
+- name: 'releaseType'
+  type: string    
+  default: 'stable'
+  
+steps:
+- task: DockerInstaller@0
+  inputs:
+    dockerVersion: '${{parameters.dockerVersion}}' 
+    releaseType: '${{parameters.releaseType}}' 
